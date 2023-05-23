@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="Contact.css">
+        <script>
+            function msg(){
+                let x=document.forms["f3"]["name"].value;
+                let y=document.forms["f3"]["emailid"].value;
+                let z=document.forms["f3"]["message"].value;
+                if(x== "" || y== "" || z== "" ){
+                    alert("Fields cnat't be empty");
+                    return false;
+                }
+                else{
+                    alert("Your response have been submitted!");
+                    
+                }
+            }        
+        </script>
+    </head>
+    <body>
+        <div class="container">
+    
+            <div class="navbar">
+            
+            <img src="Images/logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>  
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Menu</a></li>  
+                    <li><a href="">Contact</a></li>           
+                </ul>
+            </nav>
+            <img src="Images/cart.png" class="cart"><hr><hr>   
+        </div>
+        <h1><u>Contact</u></h1><br><br>
+        <p>A warm welcome to our website!</p><br>
+        <p>If you are having any query you can contact us through this message</p><br>
+        <div class="content">
+            <form name="f3" action="Coffeeholic.html" onsubmit="return msg()">
+                <p><label>Name:<input type="text" name="name" /></label></p><br>
+                <p><label>Email id:<input type="text" name="emailid"/></label></p><br>
+                <p><label>Message:
+                    <br/>
+                <textarea type="text" name="message" cols="30" rows="5"></textarea><br>
+                <input type="submit" value="Submit" class="btn" onclick="msg()">
+            </label>
+            
+        </form>
+        </div>
+        <footer>
+            <p>© 2019 Coffeeholic</p>
+        </footer>
+        </body>
+        </html>
+        
+
+      
